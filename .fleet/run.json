@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+          "type": "command",
+          "name": "npm",
+          "program": "npm",
+          "args": ["start"],
+        },
+
+    ]
+}

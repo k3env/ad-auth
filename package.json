@@ -1,18 +1,24 @@
 {
-  "name": "demo",
+  "name": "ad-connector",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "prestart": "npm run prettify",
+    "prettify": "npx prettier -w *.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ldap-authentication": "^2.3.2",
-    "nexe": "^4.0.0-rc.1"
+    "nats": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
   }
 }
